@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Listado Notas Alumnos:</h1> 
+    
+    
+    <p style="color:green">
+    | nombre {{ nombre }}<br> | apellido {{ apellido }}<br>
+
+
+    {% for n in notas %}
+        
+        {% if n < 6 %}
+            <p style="color:red"> Nota mala {{ n }} </p>
+        {% else %} <p style="color:blue"> Nota buena {{ n }} </p>
+        {% endif %}
+    
+        {% endfor %}
+    <p>
+
+
+
+
+</body>
+</html>
